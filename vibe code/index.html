@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Meet independent makers, suppliers and wholesalers on Trade Link. Discover businesses and start a direct conversation for free.">
+  <title>Trade Link | Where makers meet wholesalers</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,600,700&f[]=trench-slab@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-page="home">
+  <div id="site-header"></div>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&amp;fit=crop&amp;w=2200&amp;q=85" alt="Large container ship carrying freight through a busy port" fetchpriority="high">
+      <div class="hero-content wrap">
+        <p class="eyebrow">A better way to do business</p>
+        <h1 id="hero-title">Where makers meet <span>wholesalers.</span></h1>
+        <p class="hero-copy">Discover independent businesses, find the products you need, and talk directly with the people behind them.</p>
+        <div class="button-row">
+          <a class="button button-primary" href="discover.html">Explore businesses</a>
+          <a class="button button-outline" href="#updates">Join free</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-band" aria-label="Trade Link at a glance">
+      <div class="stats-grid wrap">
+        <div><strong>2,400+</strong><span>businesses</span></div>
+        <div><strong>40+</strong><span>categories</span></div>
+        <div><strong>Free</strong><span>to join</span></div>
+      </div>
+    </section>
+
+    <section class="section wrap" aria-labelledby="steps-title">
+      <div class="section-heading"><p class="eyebrow">Simple by design</p><h2 id="steps-title">How it works</h2></div>
+      <ol class="steps-grid">
+        <li><span class="step-number">01</span><h3>Create your profile</h3><p>Put your business and products in front of the right people.</p></li>
+        <li><span class="step-number">02</span><h3>Discover businesses</h3><p>Search makers, suppliers and wholesalers across categories.</p></li>
+        <li><span class="step-number">03</span><h3>Start the conversation</h3><p>Ask questions and explore a fit directly in chat.</p></li>
+      </ol>
+    </section>
+
+    <section class="section section-rule wrap" aria-labelledby="featured-title">
+      <div class="section-heading heading-with-link"><div><p class="eyebrow">Good people, good products</p><h2 id="featured-title">Featured businesses</h2></div><a class="text-link" href="discover.html">See all businesses <span aria-hidden="true">&#8594;</span></a></div>
+      <div id="featured-businesses" class="business-grid business-grid-featured" aria-live="polite"></div>
+    </section>
+
+    <section class="section plans-section" aria-labelledby="plans-title">
+      <div class="wrap">
+        <div class="section-heading"><p class="eyebrow">Room to grow</p><h2 id="plans-title">Start free. Grow when you're ready.</h2></div>
+        <div class="plans-grid">
+          <article class="plan-card"><p class="eyebrow">The essentials</p><h3>Free</h3><p class="plan-price">$0 <span>/ forever</span></p><ul><li>Business profile</li><li>Browse and search</li><li>Limited messages</li></ul><a class="button button-outline" href="#updates">Join free</a></article>
+          <article class="plan-card plan-pro"><p class="eyebrow">More ways to grow</p><h3>Pro</h3><p class="plan-price">$9 <span>/ month</span></p><ul><li>Unlimited messages</li><li>Featured listing</li><li>Verified badge</li><li>Product analytics</li><li>Priority support</li></ul><button class="button button-primary" type="button" data-open-pricing>See Pro details</button></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="signup-band" id="updates" aria-labelledby="updates-title">
+      <div class="wrap signup-layout"><div><p class="eyebrow">Be first to know</p><h2 id="updates-title">Get launch updates</h2><p>Product news, early access and stories from the Trade Link community.</p></div><div class="email-form-mount" data-email-form></div></div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <div id="global-overlays"></div>
+</body>
+</html>

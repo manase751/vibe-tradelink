@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Search independent suppliers, wholesalers and small businesses on Trade Link. Filter by product, category and location.">
+  <title>Discover Businesses | Trade Link</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,600,700&f[]=trench-slab@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-page="discover">
+  <div id="site-header"></div>
+  <main class="discover-page wrap">
+    <section class="page-intro" aria-labelledby="discover-title"><p class="eyebrow">Find your next partner</p><h1 id="discover-title">Discover <span>businesses.</span></h1><p>Search independent makers, suppliers and wholesalers ready to connect.</p></section>
+    <section class="directory-tools" aria-label="Search and filter businesses">
+      <label class="search-field"><span class="visually-hidden">Search businesses, products or location</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input id="business-search" type="search" placeholder="Search businesses, products or location" autocomplete="off"></label>
+      <div class="filter-toolbar"><div class="category-filters" id="category-filters" aria-label="Filter by category"></div><div class="select-filters"><label>Business type<select id="type-filter"><option value="">All types</option><option>Supplier</option><option>Wholesaler</option><option>Small business</option></select></label><label>Location<select id="location-filter"><option value="">All locations</option></select></label></div></div>
+      <div class="results-toolbar"><p id="active-filter-count" aria-live="polite">0 active filters</p><button class="text-button" id="clear-filters" type="button">Clear all</button><label class="sort-control">Sort by<select id="sort-filter"><option value="newest">Newest</option><option value="az">A-Z</option></select></label></div>
+    </section>
+    <aside class="pro-hint"><p><strong>Make your business easier to find.</strong> Pro members get a featured spot at the top of results.</p><button class="text-button" type="button" data-open-pricing>Explore Pro <span aria-hidden="true">&#8594;</span></button></aside>
+    <div id="business-results" class="business-grid" aria-live="polite"></div>
+    <div class="empty-state" id="empty-state" hidden><h2>No businesses match your search</h2><p>Try another name, product or location, or clear your filters.</p><button class="button button-outline" id="empty-clear" type="button">Clear filters</button></div>
+  </main>
+  <div id="site-footer"></div>
+  <div id="global-overlays"></div>
+</body>
+</html>
